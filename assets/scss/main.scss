@@ -1,0 +1,23 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import '../../node_modules/highlight.js/scss/stackoverflow-dark.scss';
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+#page-content {
+    header {
+        background-color: var(--bs-tertiary-bg);
+        
+        @extend .border;
+        @extend .rounded-1;
+        @extend .p-4;
+        @extend .mb-3;
+    }
+
+    pre > code {
+        @extend .border;
+        @extend .rounded-1;
+        padding: 0.4rem;
+        font-family: "Source Code Pro", monospace;
+        font-optical-sizing: auto;
+    }
+}
