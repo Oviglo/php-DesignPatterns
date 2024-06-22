@@ -12,19 +12,15 @@ class Singleton
     public static function getInstance(): Singleton
     {
         if (null === self::$instance) {
+            // echo 'Creating new instance.'.PHP_EOL;
             self::$instance = new Singleton();
         }
 
         return self::$instance;
     }
 
-    private function __clone()
+    public function doSomething()
     {
-        // The clone magic method is private to prevent cloning of the instance.
-    }
-
-    private function __wakeup()
-    {
-        // The wakeup magic method is private to prevent unserializing of the instance.
+        // The singleton class can define some business logic, which can be executed on its instance.
     }
 }

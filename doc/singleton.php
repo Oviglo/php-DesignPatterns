@@ -9,8 +9,14 @@
 </p>
 
 <div>
-
+    <h3>Exemple de code</h3>
     <?php echo '<pre><code class="language-php">'.htmlentities(file_get_contents('./src/Creational/Singleton/Singleton.php')).'</code></pre>'; ?>
 
-
+    <h3>Application du pattern Singleton</h3>
+    <p>Le code suivant illustre l'application du modèle Singleton.</p>
+    <?php echo '<pre><code class="language-php">'.htmlentities(file_get_contents('./src/Creational/Singleton/Application.php')).'</code></pre>'; ?>
+    <h4>Résultat</h4>
+    <div class="result">
+        <pre><code><?php require_once './src/Creational/Singleton/Application.php'; ?></code></pre>
+    </div>
 </div>

@@ -7,7 +7,12 @@
                 </ul>
             </li>
             <li><a href="index.php?page=structural">Structure</a></li>
-            <li><a href="index.php?page=behavioral">Comportement</a></li>
+            <li><a href="index.php?page=behavioral">Comportement</a>
+                <ul>
+                    <li><a href="index.php?page=observer">Observer</a></li>
+                    <li><a href="index.php?page=strategy">Strategy</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </div>
